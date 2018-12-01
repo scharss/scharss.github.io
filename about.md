@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Web Developer
+
+https://scharss.blogspot.com/
 
 ### More Information
 
