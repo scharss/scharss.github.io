@@ -99,3 +99,13 @@ a {
     margin-right: 4px;
     height: auto;
 }
+
+.bott {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+    height: 100%;
+    opacity: 0;
+    animation: botFade 2000ms forwards;
+}
