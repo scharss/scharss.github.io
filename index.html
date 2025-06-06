@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/poppins.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+  <div id="particles-js"></div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="#"><img src="assets/logo.png" alt="Logo" style="height: 40px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-links">
+          <li class="nav-item"><a class="nav-link" data-section="home"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;"><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.27a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.58V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l225.2-185.06a12 12 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg>Home</a></li>
+          <li class="nav-item"><a class="nav-link" data-section="about"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>About</a></li>
+          <li class="nav-item"><a class="nav-link" data-section="projects"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 6px;"><path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"></path></svg>Projects</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br><br>
+  <!-- Home Section -->
+  <section id="home" class="home-section active" data-section="home">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-7 home-intro">
+          <h1 class="heading">
+            Hi There! <span class="wave" role="img" aria-labelledby="wave">👋🏻</span>
+          </h1>
+          <h1 class="heading-name">
+            I'M
+            <strong class="main-name"> Scharss Azael</strong>
+          </h1>
+          <div class="main-name-desc">
+            <div id="typewriter"></div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img src="./assets/home-main.svg" alt="home-pic" class="img-fluid" style="max-height: 450px;">
+        </div>
+      </div>
+      <div class="row align-items-center mt-5 gx-5 intro-section">
+        <div class="col-lg-8 col-md-12 intro-text">
+          <h1 class="intro-title">LET ME <span class="intro-purple">INTRODUCE</span> MYSELF</h1>
+          <p class="intro-body">
+            I am a software developer with a passion for technology and innovation. <span class="intro-emoji">🤷‍♂️</span><br><br>
+            I am fluent in classics like <span class="intro-purple italic">C++, PHP, Javascript, Python and Solidity.</span><br><br>
+            My field of Interest's are building new <span class="intro-purple italic">Web Technologies and Products</span> and also in areas related to <span class="intro-purple italic">Blockchain and AI</span><br><br>
+            Whenever possible, I also apply my passion for developing products with <span class="intro-purple italic">Node.js</span> and <span class="intro-purple italic">Modern Javascript Library and Frameworks</span> like <span class="intro-purple italic">React.js and Next.js</span>.
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center intro-avatar mt-4 mt-lg-0">
+          <img src="assets/avatar.svg" alt="Avatar" class="avatar-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" data-section="about">
+    <div class="container py-5">
+      <div class="row align-items-center gx-5">
+        <div class="col-lg-7 col-md-12 mb-4 mb-lg-0">
+          <h2 class="mb-3">About Me</h2>
+          <p class="mb-4">As a software developer, my goal is to build high-performance digital products. I specialize in using modern technology to create optimized and easy-to-use solutions.</p>
+          <h4 class="about-subtitle mb-2">Technologies I use</h4>
+          <div class="icon-list mb-3">
+            <img src="vendor/devicons/javascript-original.svg" alt="JavaScript" title="JavaScript" height="40">
+            <img src="vendor/devicons/react-original.svg" alt="React" title="React" height="40">
+            <img src="vendor/devicons/nodejs-original.svg" alt="Node.js" title="Node.js" height="40">
+            <img src="vendor/devicons/mongodb-original.svg" alt="MongoDB" title="MongoDB" height="40">
+            <img src="vendor/devicons/python-original.svg" alt="Python" title="Python" height="40">
+            <img src="vendor/devicons/git-original.svg" alt="Git" title="Git" height="40">
+            <img src="vendor/devicons/java-original.svg" alt="Java" title="Java" height="40">
+            <img src="vendor/devicons/php-original.svg" alt="PHP" title="PHP" height="40">
+            <img src="vendor/devicons/mysql-original.svg" alt="MySQL" title="MySQL" height="40">
+            <img src="vendor/devicons/solidity-original.svg" alt="Solidity" title="Solidity" height="40">
+          </div>
+          <h4 class="about-subtitle mb-2">Favorite tools</h4>
+          <div class="icon-list mb-3">
+            <img src="vendor/devicons/vscode-original.svg" alt="VSCode" title="VSCode" height="40">
+            <img src="vendor/devicons/postman-original.svg" alt="Postman" title="Postman" height="40">
+            <img src="vendor/devicons/slack-original.svg" alt="Slack" title="Slack" height="40">
+            <img src="vendor/devicons/vercel-original.svg" alt="Vercel" title="Vercel" height="40">
+            <img src="vendor/devicons/apple-original.svg" alt="MacOS" title="MacOS" height="40">
+            <img src="vendor/devicons/linux-original.svg" alt="Linux" title="Linux" height="40">
+          </div>
+          <h4 class="about-subtitle mb-2">My activity on GitHub</h4>
+          <div class="github-calendar mb-2">
+            <a href="https://github.com/scharss" target="_blank">
+              <img src="vendor/github-chart.svg" alt="GitHub chart" style="max-width:100%;height:auto;">
+            </a>
+            <p style="font-size:0.9em;">See more in my <a href="https://github.com/scharss" target="_blank">GitHub profile</a>.</p>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-12 d-flex justify-content-center align-items-center">
+          <img src="assets/about.png" alt="Sobre mí" class="img-fluid rounded-circle shadow" style="max-width: 260px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" data-section="projects">
+    <div class="container py-5">
+      <h2 class="mb-4 text-center">Featured Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow project-card-view">
+            <img src="assets/Projects/qrschool.png" class="card-img-top" alt="Chatify">
+            <div class="card-body">
+              <h5 class="card-title">QR School</h5>
+              <p class="card-text"> Attendance Control System Using QR Codes. Optimizes attendance records, eliminating manual processes and reducing the margin of human error <a href="https://qrspace.cam/">Demo</a></p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow project-card-view">
+            <img src="assets/Projects/bytecrafterassistant.png" class="card-img-top" alt="Code Editor">
+            <div class="card-body">
+              <h5 class="card-title">Bytecrafter Assistant</h5>
+              <p class="card-text">Interactive Chat with Local AI: No connection to external services for maximum privacy. <a href="https://github.com/scharss/bytecrafterassistant">Demo</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow project-card-view">
+            <img src="assets/Projects/Docker development environment for PHP and MySQL.png" class="card-img-top" alt="Blog">
+            <div class="card-body">
+              <h5 class="card-title">Development Environment</h5>
+              <p class="card-text">This project provides a ready-to-use Docker configuration for developing and running PHP applications with a MySQL database. <a href="https://github.com/scharss/myxampp">Demo</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow project-card-view">
+            <img src="assets/Projects/TR4 AI Checker.png" class="card-img-top" alt="Leaf Disease Detection">
+            <div class="card-body">
+              <h5 class="card-title">TR4 AI Checker</h5>
+              <p class="card-text">Web application that uses artificial intelligence to analyze images of banana plants and detect Fusarium TR4 (Tropical Race 4). <a href="https://github.com/scharss/TR4-CHECKER">Demo</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow project-card-view">
+            <img src="assets/Projects/rifasApp.png" class="card-img-top" alt="Chatify">
+            <div class="card-body">
+              <h5 class="card-title">Raffle App</h5>
+              <p class="card-text">Application for selling raffle tickets, payment gateway, and admin panel. <a href="https://prontollegara.cam/">Demo</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow project-card-view">
+            <img src="assets/Projects/mercaplace.png" class="card-img-top" alt="Code Editor">
+            <div class="card-body">
+              <h5 class="card-title">MercaPlace</h5>
+              <p class="card-text">Virtual store, with payment gateway, integration with shipping companies, creation of automatic shipping guide. <a href="https://mercaplace.cam/">Demo</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow project-card-view">
+            <img src="assets/Projects/cuantica.png" class="card-img-top" alt="Blog">
+            <div class="card-body">
+              <h5 class="card-title">Revista Cuántica</h5>
+              <p class="card-text">Technology and geopolitics magazine, exploring events and stories that seem like science fiction. <a href="https://cuantica.space/">Demo</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow project-card-view">
+            <img src="assets/Projects/agrodata.png" class="card-img-top" alt="Leaf Disease Detection">
+            <div class="card-body">
+              <h5 class="card-title">Agrodata</h5>
+              <p class="card-text">Web application that provides GPS coordinates and satellite weather information. <a href="https://scharss.github.io/agrodata2/">Demo</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>© 2025 Scharss. Portafolio.</p>
+    <div class="footer-links">
+      <a href="https://github.com/scharss" target="_blank" title="GitHub">
+        <svg width="24" height="24" fill="#fff" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.415-4.042-1.415-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      <a href="https://www.youtube.com/@scharssazael" target="_blank" title="YouTube">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ff0000" class="bi bi-youtube" viewBox="0 0 16 16">
+          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/scharss/" target="_blank" title="LinkedIn">
+        <svg width="24" height="24" fill="#0a66c2" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.966 0-1.75-.79-1.75-1.75s.784-1.75 1.75-1.75 1.75.79 1.75 1.75-.784 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.38v4.59h-3v-9h2.89v1.23h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v5.74z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/scharssazael/" target="_blank" title="Instagram">
+        <svg width="24" height="24" fill="#e1306c" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.241-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.425 3.678 1.406c-.981.981-1.275 2.093-1.334 3.374C2.013 5.741 2 6.151 2 12c0 5.849.013 6.259.072 7.54.059 1.281.353 2.393 1.334 3.374.981.981 2.093 1.275 3.374 1.334C8.259 23.987 8.669 24 12 24s3.741-.013 4.948-.072c1.281-.059 2.393-.353 3.374-1.334.981-.981 1.275-2.093 1.334-3.374.059-1.281.072-1.691.072-7.54 0-5.849-.013-6.259-.072-7.54-.059-1.281-.353-2.393-1.334-3.374C19.341.425 18.229.131 16.948.072 15.669.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+  <script src="vendor/particles.min.js"></script>
+  <script src="script.js"></script>
+  <a href="https://api.whatsapp.com/send/?phone=573117379576&text=Hola+%2ABytecrafter%2A.+Necesito+m%C3%A1s+informaci%C3%B3n&type=phone_number&app_absent=0" class="whatsapp-flotante" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg>
+  </a>
+</body>
+</html> 
