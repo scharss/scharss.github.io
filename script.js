@@ -124,6 +124,15 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       const section = this.getAttribute('data-section');
       showSection(section);
+
+      // Cerrar el menú si está abierto (en vistas móviles)
+      const navCollapse = document.getElementById('mainNavbar');
+      if (navCollapse.classList.contains('show')) {
+        const bsCollapse = new bootstrap.Collapse(navCollapse, {
+          toggle: false
+        });
+        bsCollapse.hide();
+      }
     });
   });
 

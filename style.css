@@ -583,6 +583,17 @@ section[data-section].active {
 }
 
 .whatsapp-flotante:hover {
-  background-color: #128C7E;
-  color: #FFF;
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0, 255, 136, 0.4);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #1f2235;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(162, 89, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
 } 
