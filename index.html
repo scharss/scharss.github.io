@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121212">
+
+  <title>Dark Particle | Software Engineering &amp; AI Lab</title>
+  <meta name="description" content="Dark Particle is a software engineering and AI Lab. We build AI agents, high-performance websites and e-commerce platforms with scientific rigor.">
+  <meta name="author" content="Dark Particle">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dark Particle">
+  <meta property="og:title" content="Dark Particle | Software Engineering &amp; AI Lab">
+  <meta property="og:description" content="Software engineering, AI agents, web development and e-commerce — designed, tested and measured like scientific instruments.">
+  <meta property="og:image" content="assets/og-dark-particle.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dark Particle | Software Engineering &amp; AI Lab">
+  <meta name="twitter:description" content="Software engineering, AI agents, web development and e-commerce — designed, tested and measured like scientific instruments.">
+  <meta name="twitter:image" content="assets/og-dark-particle.png">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Google Fonts: pixel typography (Pixelify Sans + Silkscreen + VT323) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Dark Particle",
+    "description": "Software engineering and AI Lab: AI agents, web development and e-commerce platforms engineered with scientific rigor.",
+    "image": "assets/logo-dark-particle.png",
+    "telephone": "+57 311 7379576",
+    "areaServed": "Worldwide",
+    "knowsAbout": ["Software engineering", "Artificial intelligence", "AI agents", "Web development", "E-commerce"]
+  }
+  </script>
+
+  <script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main" data-i18n="a11y_skip">Skip to content</a>
+
+  <!-- Fondo animado global (red de partículas) -->
+  <canvas id="swlab-bg" aria-hidden="true"></canvas>
+
+  <!-- ============================= -->
+  <!-- NAVBAR                        -->
+  <!-- ============================= -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="brand" aria-label="Dark Particle — home">
+        <svg class="brand__mark" viewBox="0 0 40 40" width="36" height="36" aria-hidden="true" focusable="false">
+          <ellipse cx="20" cy="20" rx="17" ry="6.2" transform="rotate(-30 20 20)" fill="none" stroke="currentColor" stroke-opacity=".55" stroke-width="1.2"/>
+          <ellipse cx="20" cy="20" rx="17" ry="6.2" transform="rotate(30 20 20)" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <circle cx="20" cy="20" r="5.2" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+          <circle cx="20" cy="20" r="2.6" fill="currentColor"/>
+          <circle cx="34.7" cy="11.5" r="1.3" fill="currentColor" fill-opacity=".7"/>
+        </svg>
+        <span class="brand__name">Dark Particle</span>
+      </a>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Main navigation">
+        <ul class="navbar__links">
+          <li><a href="#services" class="navbar__link" data-i18n="nav_services">Services</a></li>
+          <li><a href="#method" class="navbar__link" data-i18n="nav_method">Method</a></li>
+          <li><a href="#tech" class="navbar__link" data-i18n="nav_tech">Technology</a></li>
+          <li><a href="#features" class="navbar__link" data-i18n="nav_features">Why Us</a></li>
+          <li><a href="#contact" class="navbar__link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="navbar__actions">
+          <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+            <span data-i18n="lang_label">ES</span>
+          </button>
+          <a href="https://wa.me/573117379576" class="btn btn--primary navbar__cta" target="_blank" rel="noopener" data-i18n="nav_cta" data-wa="nav">
+            Start a project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </nav>
+
+      <div class="navbar__right">
+        <button class="lang-toggle lang-toggle--mobile" id="langToggleMobile" type="button" aria-label="Switch language">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          <span data-i18n="lang_label">ES</span>
+        </button>
+        <button class="navbar__toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================= -->
+    <!-- HERO                          -->
+    <!-- ============================= -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__badge reveal">
+            <span class="hero__badge-mark" aria-hidden="true"></span>
+            <span data-i18n="hero_badge">Software Engineering · AI Lab · Research</span>
+          </p>
+
+          <h1 class="hero__title reveal" data-i18n="hero_title">Software Engineering<span class="hero__title-sub gradient-text">built to hold up</span></h1>
+
+          <p class="hero__subtitle reveal" data-i18n="hero_subtitle">Dark Particle is an engineering and AI Lab. We design software systems, autonomous agents, high-performance websites and e-commerce platforms — architected, tested and measured like scientific instruments.</p>
+
+          <div class="hero__actions reveal">
+            <a href="#services" class="btn btn--primary btn--lg" data-i18n="hero_cta1">Explore services</a>
+            <a href="https://wa.me/573117379576" class="btn btn--ghost btn--lg" target="_blank" rel="noopener" data-i18n="hero_cta2" data-wa="hero">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Let's talk
+            </a>
+          </div>
+
+          <dl class="hero__stats reveal">
+            <div class="hero__stat">
+              <dt class="hero__stat-label" data-i18n="hero_stat1_label">Method</dt>
+              <dd class="hero__stat-value" data-i18n="hero_stat1">Research-led engineering</dd>
+            </div>
+            <div class="hero__stat">
+              <dt class="hero__stat-label" data-i18n="hero_stat2_label">Agents</dt>
+              <dd class="hero__stat-value" data-i18n="hero_stat2">AI in production</dd>
+            </div>
+            <div class="hero__stat">
+              <dt class="hero__stat-label" data-i18n="hero_stat3_label">Delivery</dt>
+              <dd class="hero__stat-value" data-i18n="hero_stat3">Measured, secure, scalable</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="detector">
+            <div class="detector__head">
+              <span class="detector__led" aria-hidden="true"></span>
+              <span class="detector__title">Particle Engine</span>
+              <span class="detector__meta">v2.4</span>
+            </div>
+
+            <div class="detector__stage">
+              <svg class="detector__svg" viewBox="0 0 400 400" role="img" aria-label="Particle detector diagram with orbital tracks">
+                <defs>
+                  <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#E0E0E0" stop-opacity=".30"/>
+                    <stop offset="100%" stop-color="#E0E0E0" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+
+                <g fill="none" stroke="#444444">
+                  <circle cx="200" cy="200" r="168" stroke-dasharray="2 9"/>
+                  <circle cx="200" cy="200" r="128" stroke-opacity=".6"/>
+                  <circle cx="200" cy="200" r="86" stroke-opacity=".35"/>
+                </g>
+
+                <g stroke="#888888" stroke-width="1" fill="none">
+                  <path d="M200 18v14M200 368v14M18 200h14M368 200h14"/>
+                  <path d="M200 68v6M200 326v6M68 200h6M326 200h6" stroke-opacity=".55"/>
+                </g>
+
+                <g class="detector__orbit detector__orbit--a">
+                  <ellipse cx="200" cy="200" rx="158" ry="56" fill="none" stroke="#888888" stroke-opacity=".55" stroke-width="1.2"/>
+                  <circle cx="358" cy="200" r="3.4" fill="#E0E0E0"/>
+                </g>
+
+                <g class="detector__orbit detector__orbit--b">
+                  <ellipse cx="200" cy="200" rx="158" ry="56" transform="rotate(62 200 200)" fill="none" stroke="#E0E0E0" stroke-opacity=".32" stroke-width="1.2"/>
+                  <circle cx="200" cy="42" r="2.4" fill="#888888"/>
+                </g>
+
+                <g class="detector__orbit detector__orbit--c">
+                  <ellipse cx="200" cy="200" rx="132" ry="44" transform="rotate(118 200 200)" fill="none" stroke="#444444" stroke-width="1"/>
+                </g>
+
+                <circle cx="200" cy="200" r="54" fill="url(#coreGlow)"/>
+                <circle cx="200" cy="200" r="11" fill="none" stroke="#888888" stroke-opacity=".7"/>
+                <circle cx="200" cy="200" r="4.5" fill="#E0E0E0"/>
+                <path d="M200 178v-9M200 231v-9M178 200h-9M231 200h-9" stroke="#888888" stroke-opacity=".6"/>
+              </svg>
+            </div>
+
+            <div class="detector__readout">
+              <div class="detector__row"><span>MODEL</span><span>ai-lab</span></div>
+              <div class="detector__row"><span>STATE</span><span class="is-ok">converged</span></div>
+              <div class="detector__row"><span>DRIFT</span><span>0.003</span></div>
+            </div>
+
+            <div class="detector__foot">
+              <span>RUN 0042</span>
+              <span>MONO / #121212</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- STACK STRIP                   -->
+    <!-- ============================= -->
+    <section class="stack" aria-label="Technology stack">
+      <div class="container stack__inner">
+        <span class="stack__label" data-i18n="stack_label">Stack</span>
+        <ul class="stack__list">
+          <li>TypeScript</li>
+          <li>Python</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>PostgreSQL</li>
+          <li>PyTorch</li>
+          <li>LangChain</li>
+          <li>Docker</li>
+          <li>AWS</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- SERVICES                      -->
+    <!-- ============================= -->
+    <section class="section services" id="services">
+      <div class="container">
+        <header class="section__head reveal">
+          <div class="section__head-main">
+            <p class="section__eyebrow"><span class="section__index">01</span><span data-i18n="services_tag">Services</span></p>
+            <h2 class="section__title" data-i18n="services_title">Four disciplines,<br><span class="gradient-text">one standard</span></h2>
+          </div>
+          <p class="section__desc" data-i18n="services_desc">We concentrate on what we do best: engineering software and artificial intelligence that runs in production, without noise.</p>
+        </header>
+
+        <div class="services__grid">
+          <!-- 01. Software engineering & AI -->
+          <article class="service reveal">
+            <div class="service__top">
+              <span class="service__icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+              <span class="service__num">01</span>
+            </div>
+            <h3 class="service__title" data-i18n="s1_title">Software Engineering &amp; AI</h3>
+            <p class="service__text" data-i18n="s1_desc">Full-stack product engineering with AI at the core. We design architectures, APIs and data models that stay coherent as the product grows.</p>
+            <ul class="service__list">
+              <li data-i18n="s1_i1">Web &amp; mobile applications</li>
+              <li data-i18n="s1_i2">APIs &amp; microservices</li>
+              <li data-i18n="s1_i3">Cloud-native architecture</li>
+            </ul>
+          </article>
+
+          <!-- 02. AI agents -->
+          <article class="service reveal">
+            <div class="service__top">
+              <span class="service__icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></span>
+              <span class="service__num">02</span>
+            </div>
+            <h3 class="service__title" data-i18n="s2_title">AI Agents &amp; Automation</h3>
+            <p class="service__text" data-i18n="s2_desc">Autonomous agents and language-model workflows that read context, use tools and execute real processes — with evaluation and guardrails.</p>
+            <ul class="service__list">
+              <li data-i18n="s2_i1">Autonomous agents</li>
+              <li data-i18n="s2_i2">RAG &amp; knowledge bases</li>
+              <li data-i18n="s2_i3">Workflow automation</li>
+            </ul>
+          </article>
+
+          <!-- 03. Web development -->
+          <article class="service reveal">
+            <div class="service__top">
+              <span class="service__icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></span>
+              <span class="service__num">03</span>
+            </div>
+            <h3 class="service__title" data-i18n="s3_title">Web Development</h3>
+            <p class="service__text" data-i18n="s3_desc">Corporate sites and landing pages engineered for speed, accessibility and search: performance budgets, semantic markup and clean design.</p>
+            <ul class="service__list">
+              <li data-i18n="s3_i1">Corporate websites</li>
+              <li data-i18n="s3_i2">Landing pages</li>
+              <li data-i18n="s3_i3">Technical SEO &amp; performance</li>
+            </ul>
+          </article>
+
+          <!-- 04. E-commerce -->
+          <article class="service reveal">
+            <div class="service__top">
+              <span class="service__icon"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></span>
+              <span class="service__num">04</span>
+            </div>
+            <h3 class="service__title" data-i18n="s4_title">E-commerce &amp; Online Stores</h3>
+            <p class="service__text" data-i18n="s4_desc">Online stores that convert: catalog, payments, logistics and analytics — built on WooCommerce, Shopify or a custom stack.</p>
+            <ul class="service__list">
+              <li data-i18n="s4_i1">WooCommerce &amp; Shopify</li>
+              <li data-i18n="s4_i2">Payments &amp; logistics</li>
+              <li data-i18n="s4_i3">Sales analytics &amp; automation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- METHOD                        -->
+    <!-- ============================= -->
+    <section class="section method" id="method">
+      <div class="container">
+        <header class="section__head reveal">
+          <div class="section__head-main">
+            <p class="section__eyebrow"><span class="section__index">02</span><span data-i18n="method_tag">Method</span></p>
+            <h2 class="section__title" data-i18n="method_title">A method,<br>not <span class="gradient-text">guesswork</span></h2>
+          </div>
+          <p class="section__desc" data-i18n="method_desc">Every project follows the same scientific loop: observe, model, build and measure. It is slower to start and faster to finish.</p>
+        </header>
+
+        <ol class="method__grid">
+          <li class="method__step reveal">
+            <span class="method__num">01</span>
+            <h3 data-i18n="m1_title">Observe</h3>
+            <p data-i18n="m1_desc">We map the problem, the users, the constraints and the available data before writing a line of code.</p>
+          </li>
+          <li class="method__step reveal">
+            <span class="method__num">02</span>
+            <h3 data-i18n="m2_title">Model</h3>
+            <p data-i18n="m2_desc">Architecture, data model and AI evaluation criteria are defined up front — not discovered by accident.</p>
+          </li>
+          <li class="method__step reveal">
+            <span class="method__num">03</span>
+            <h3 data-i18n="m3_title">Build</h3>
+            <p data-i18n="m3_desc">Clean, tested and documented code, with CI/CD, observability and security from the first iteration.</p>
+          </li>
+          <li class="method__step reveal">
+            <span class="method__num">04</span>
+            <h3 data-i18n="m4_title">Measure</h3>
+            <p data-i18n="m4_desc">We ship, instrument and iterate against real metrics instead of opinions.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- TECHNOLOGY                    -->
+    <!-- ============================= -->
+    <section class="section tech" id="tech">
+      <div class="container tech__grid">
+        <div class="tech__content reveal">
+          <p class="section__eyebrow"><span class="section__index">03</span><span data-i18n="tech_tag">Technology</span></p>
+          <h2 class="section__title" data-i18n="tech_title">From model to<br><span class="gradient-text">production</span></h2>
+          <p class="section__desc" data-i18n="tech_desc">AI only matters when it survives contact with real users. We engineer for reliability, latency and cost — not for demos.</p>
+
+          <ul class="tech__features">
+            <li>
+              <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+              <div>
+                <h3 data-i18n="t1_title">AI research</h3>
+                <p data-i18n="t1_desc">Evaluation, fine-tuning and guardrails for models that behave predictably.</p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+              <div>
+                <h3 data-i18n="t2_title">Agents &amp; integrations</h3>
+                <p data-i18n="t2_desc">Tools, APIs, databases and documents connected into a single workflow.</p>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+              <div>
+                <h3 data-i18n="t3_title">Data &amp; observability</h3>
+                <p data-i18n="t3_desc">Pipelines, metrics and traces that make every decision auditable.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="engine reveal" aria-label="Particle Engine metrics">
+          <div class="engine__head">
+            <span class="engine__led" aria-hidden="true"></span>
+            <span data-i18n="engine_title">Particle Engine</span>
+            <span class="engine__meta">BENCH</span>
+          </div>
+
+          <div class="engine__body">
+            <div class="engine__metric">
+              <div class="engine__metric-top"><span data-i18n="metric1">Manual tasks</span><span>&minus;95%</span></div>
+              <div class="engine__bar"><span style="width: 95%"></span></div>
+            </div>
+            <div class="engine__metric">
+              <div class="engine__metric-top"><span data-i18n="metric2">Process speed</span><span>&times;10</span></div>
+              <div class="engine__bar"><span style="width: 88%"></span></div>
+            </div>
+            <div class="engine__metric">
+              <div class="engine__metric-top"><span data-i18n="metric3">Accuracy</span><span>99.7%</span></div>
+              <div class="engine__bar"><span style="width: 99%"></span></div>
+            </div>
+          </div>
+
+          <div class="engine__foot">
+            <span data-i18n="engine_foot">Continuous evaluation</span>
+            <span>DP-ENGINE / 2.4</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- WHY US                        -->
+    <!-- ============================= -->
+    <section class="section features" id="features">
+      <div class="container">
+        <header class="section__head reveal">
+          <div class="section__head-main">
+            <p class="section__eyebrow"><span class="section__index">04</span><span data-i18n="features_tag">Why Us</span></p>
+            <h2 class="section__title" data-i18n="features_title">Why <span class="gradient-text">Dark Particle</span>?</h2>
+          </div>
+          <p class="section__desc" data-i18n="features_desc">A small, senior team with a bias toward rigor and long-term maintainability.</p>
+        </header>
+
+        <div class="features__grid">
+          <article class="principle reveal">
+            <div class="principle__top">
+              <i class="fa-solid fa-flask" aria-hidden="true"></i>
+              <span class="principle__num">01</span>
+            </div>
+            <h3 data-i18n="f1_title">Scientific rigor</h3>
+            <p data-i18n="f1_desc">Decisions backed by evidence: benchmarks, automated tests and measurable results.</p>
+          </article>
+
+          <article class="principle reveal">
+            <div class="principle__top">
+              <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+              <span class="principle__num">02</span>
+            </div>
+            <h3 data-i18n="f2_title">Production-grade code</h3>
+            <p data-i18n="f2_desc">Typed, tested and documented — built to be maintained by someone else.</p>
+          </article>
+
+          <article class="principle reveal">
+            <div class="principle__top">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+              <span class="principle__num">03</span>
+            </div>
+            <h3 data-i18n="f3_title">Security by design</h3>
+            <p data-i18n="f3_desc">Least privilege, threat modeling and auditable data handling from day one.</p>
+          </article>
+
+          <article class="principle reveal">
+            <div class="principle__top">
+              <i class="fa-solid fa-comments" aria-hidden="true"></i>
+              <span class="principle__num">04</span>
+            </div>
+            <h3 data-i18n="f4_title">Direct communication</h3>
+            <p data-i18n="f4_desc">No layers in between: you talk directly with the engineers building your product.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- CTA / CONTACT                 -->
+    <!-- ============================= -->
+    <section class="section cta" id="contact">
+      <div class="container">
+        <div class="cta__panel reveal">
+          <div class="cta__content">
+            <p class="section__eyebrow"><span class="section__index">05</span><span data-i18n="cta_tag">Contact</span></p>
+            <h2 class="cta__title" data-i18n="cta_title">Have a problem worth engineering?</h2>
+            <p class="cta__text" data-i18n="cta_text">Tell us what you are building. You will get a technical answer, not a sales pitch.</p>
+            <div class="cta__actions">
+              <a href="https://wa.me/573117379576" class="btn btn--primary btn--lg" target="_blank" rel="noopener" data-i18n="cta_btn1" data-wa="cta">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Message us on WhatsApp
+              </a>
+              <a href="#services" class="btn btn--ghost btn--lg" data-i18n="cta_btn2">Review services</a>
+            </div>
+          </div>
+
+          <div class="cta__deco" aria-hidden="true">
+            <svg viewBox="0 0 240 240" width="240" height="240" fill="none">
+              <circle cx="120" cy="120" r="96" stroke="#444444"/>
+              <circle cx="120" cy="120" r="64" stroke="#444444" stroke-opacity=".7"/>
+              <ellipse cx="120" cy="120" rx="104" ry="34" transform="rotate(-28 120 120)" stroke="#888888" stroke-opacity=".5"/>
+              <ellipse cx="120" cy="120" rx="104" ry="34" transform="rotate(28 120 120)" stroke="#888888" stroke-opacity=".3"/>
+              <circle cx="120" cy="120" r="4" fill="#E0E0E0"/>
+              <circle cx="120" cy="120" r="10" stroke="#888888" stroke-opacity=".6"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================= -->
+  <!-- FOOTER                        -->
+  <!-- ============================= -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#hero" class="brand" aria-label="Dark Particle — home">
+            <svg class="brand__mark" viewBox="0 0 40 40" width="32" height="32" aria-hidden="true" focusable="false">
+              <ellipse cx="20" cy="20" rx="17" ry="6.2" transform="rotate(-30 20 20)" fill="none" stroke="currentColor" stroke-opacity=".55" stroke-width="1.2"/>
+              <ellipse cx="20" cy="20" rx="17" ry="6.2" transform="rotate(30 20 20)" fill="none" stroke="currentColor" stroke-width="1.2"/>
+              <circle cx="20" cy="20" r="5.2" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/>
+              <circle cx="20" cy="20" r="2.6" fill="currentColor"/>
+              <circle cx="34.7" cy="11.5" r="1.3" fill="currentColor" fill-opacity=".7"/>
+            </svg>
+            <span class="brand__name brand__name--footer">Dark Particle</span>
+          </a>
+          <p class="footer__tagline" data-i18n="footer_tagline">Software engineering &amp; AI Lab.<br>Built with scientific rigor.</p>
+          <p class="footer__status"><span class="footer__dot" aria-hidden="true"></span><span data-i18n="footer_status">Available for new projects</span></p>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-i18n="footer_services">Services</h4>
+          <ul>
+            <li><a href="#services" data-i18n="footer_sw">Software Engineering</a></li>
+            <li><a href="#services" data-i18n="footer_ai">AI Agents</a></li>
+            <li><a href="#services" data-i18n="footer_web">Web Development</a></li>
+            <li><a href="#services" data-i18n="footer_ecommerce">E-commerce</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-i18n="footer_company">Company</h4>
+          <ul>
+            <li><a href="#method" data-i18n="footer_method">Method</a></li>
+            <li><a href="#tech" data-i18n="footer_tech">Technology</a></li>
+            <li><a href="#features" data-i18n="footer_why">Why Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-i18n="footer_contact">Contact</h4>
+          <ul>
+            <li><a href="https://wa.me/573117379576" target="_blank" rel="noopener" data-wa="footer" data-i18n="footer_whatsapp">WhatsApp</a></li>
+            <li><a href="https://wa.me/573117379576" target="_blank" rel="noopener" data-wa="footer" data-i18n="footer_talk">Start a project</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p data-i18n="footer_copy">&copy; 2026 Dark Particle. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================= -->
+  <!-- WHATSAPP FLOATING BUTTON      -->
+  <!-- ============================= -->
+  <a href="https://wa.me/573117379576"
+     class="whatsapp-btn"
+     target="_blank"
+     rel="noopener"
+     aria-label="Chat on WhatsApp"
+     data-wa="float"
+     id="whatsappBtn">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    <span class="whatsapp-btn__pulse" aria-hidden="true"></span>
+  </a>
+
+  <!-- ============================= -->
+  <!-- COOKIE CONSENT BANNER         -->
+  <!-- ============================= -->
+  <div class="cookie-banner" id="cookieBanner" role="region" aria-labelledby="cookieBannerTitle" hidden>
+    <div class="container cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <p class="cookie-banner__title" id="cookieBannerTitle" data-i18n="cookie_title">Your privacy is important to us</p>
+        <p class="cookie-banner__desc" data-i18n="cookie_text">We use our own and third-party cookies to improve your experience, analyze traffic and remember your preferences.</p>
+        <p class="cookie-banner__links">
+          <a href="cookies.html" target="_blank" rel="noopener" data-i18n="cookie_policy">Cookie Policy</a>
+          <a href="privacy.html" target="_blank" rel="noopener" data-i18n="cookie_privacy">Privacy Policy</a>
+        </p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button type="button" class="btn btn--ghost" id="cookieReject" data-i18n="cookie_reject">Reject all</button>
+        <button type="button" class="btn btn--primary" id="cookieAccept" data-i18n="cookie_accept">Accept all</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/background.js"></script>
+</body>
+</html>
